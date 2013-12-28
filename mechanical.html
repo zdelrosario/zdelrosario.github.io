@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">
+
+    <title>Mechanical Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="main_files/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="main_files/carousel.css" rel="stylesheet">
+    <style type="text/css" id="holderjs-style"></style></head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+<!--    <div class="navbar-wrapper"> -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="personal.html">About Me</a></li>
+                <li class="active"><a href="mechanical.html">Mechanical</a></li>
+                <li><a href="electrical.html">Electrical</a></li>
+                <li><a href="research.html">Research</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+<!--    </div> -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+    
+    <div class="container">
+        <h1>Mechanical Projects</h1>
+        <p class="lead">The following is a collection of mechanical design projects I've worked on over the past few years, starting with the most recent.</p>
+    </div>
+    
+    <hr class="featurette-divider">
+    <!--Boeing/Scope -->
+    <div class="row featurette" id="scope">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Redesigning the Engine-Wing Interface <span class="text-muted">Boeing/SCOPE</span></h2>
+          <p class="lead">The Olin curriculum traditionally ends with SCOPE, a year-long capstone project working for an external company. For my Senior year, I worked for Boeing on a project to redesign the engine-wing interface. Unfortunately, the details of this project are under strict NDA... However, I can reveal that I worked as the analysis lead of the team, learned and utilized Patran/Nastran for our FEA work, and played a key role in our design work.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="images/scope.jpg" class="img-rounded" data-src="images/scope.jpg" alt="scope">
+        </div>
+    </div>
+    
+
+    <hr class="featurette-divider">
+    <!--Mech Design -->
+    <div class="row featurette" id="mechdesign">
+        <div class="col-md-5">
+          <img src="images/jimmy1.jpg" class="featurette-image img-responsive img-rounded" data-src="images/jimmy1.jpg" alt="jimmy1">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Designing a Bipedal Walking Robot <span class="text-muted">Introduction to Mechanical Design</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor 
+fringilla. Vestibulum id ligula porta felis euismod semper. Praesent 
+commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, 
+tellus ac cursus commodo.</p>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="container">
+        <p class="lead">My particular job on this project was to work with a partner to make sure the robot could walk. Bipedal motion is a difficult problem, and an active field of research. In order to avoid complicated dynamic modeling and accomplish a working gait in a three-week timeframe, we elected to use a statically determinant 'shuffle' gait. Our robot keeps two feet in contact with the ground at all times, rocking its feet to contact the front and rear sections of the foot, which have different frictional properties. This motion is achieved via a coupled multi-degree-of-freedom leg system driven by cams.</p>
+        <p class="lead">Our system uses a seven-bar linkage with a rotating foot, all controlled by links driven off three coaxial cams. This system allowed us to design a load-bearing linkage system in parallel with the necessary cam profiles. We first generated a critical dimension sketch to fix design parameters. My partner then focused on designing the linkage system, while I worked to generate the necessary cam profiles. The method I used was one of interpolating keyframes - I build a rough mockup of the linkage system, used Solidworks Motion Analysis tools to generate the desired leg movements, and recorded each of the three cam follower distances at numerous keyframes. This provided the data necessary to generate cam profiles. Unfortunately, this first pass did not function as intended.</p>
+        <p class="lead">Since real cam followers have nonzero radii, the point of contact between cam and follower is not always on the line between their rotational centers. This results in some error, which contributed to very strange motion with the original cam profiles. My partner and I decided to write a numerical method to iteratively converge on the desired cam profile [more later].</p>
+    </div>
+    
+    <hr class="featurette-divider">
+    <!--24 Hour Des Nat -->
+    <div class="row featurette" id="dn24">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">24 Hour Design Challenge <span class="text-muted">Personal</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor 
+fringilla. Vestibulum id ligula porta felis euismod semper. Praesent 
+commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, 
+tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="images/dn24_1.jpg" class="featurette-image img-responsive img-rounded" data-src="images/dn24_1.jpg" alt="dn24_1">
+        </div>
+    </div>
+    
+    <hr class="featurette-divider">
+    <!--24 Hour Des Nat -->
+    <div class="row featurette" id="chute">
+        <div class="col-md-5">
+          <img src="images/chute_opener.jpg" class="featurette-image img-responsive img-rounded" data-src="images/chute_opener.jpg" alt="chute_opener">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Chute Door Opener <span class="text-muted">Olin College Machine Shop</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor 
+fringilla. Vestibulum id ligula porta felis euismod semper. Praesent 
+commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, 
+tellus ac cursus commodo.</p>
+        </div>
+    </div>
+    
+    <hr class="featurette-divider">
+    <!--24 Hour Des Nat -->
+    <div class="row featurette" id="turbine">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Machining a Tesla Turbine <span class="text-muted">Fundamentals of Machine Shop Operations</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor 
+fringilla. Vestibulum id ligula porta felis euismod semper. Praesent 
+commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, 
+tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="images/turbine.jpg" class="featurette-image img-responsive img-rounded" data-src="images/turbine.jpg" alt="turbine">
+        </div>
+    </div>
+    
+    <hr class="featurette-divider">
+    <h2 id="hand">Designing an Underactuated Robotic Hand <small>Introduction to Mechanical Prototyping</small></h2>
+    
+    <hr class="featurette-divider">
+    <h2 id="uocd">The Experience Recorder <small>User Oriented Collaborative Design</small></h2>
+    
+    <hr class="featurette-divider">
+    <h2 id="24Hour">Studying Taylor-Couette Flow <small>Partial Differential Equations</small></h2>
+    
+    <hr class="featurette-divider">
+    <h2 id="desnat">Designing a Bio-Inspired Children's Toy <small>Design Nature</small></h2>
+    
+    
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2013 Zachary del Rosario.
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="main_files/jquery-1.js"></script>
+    <script src="main_files/bootstrap.js"></script>
+    <script src="main_files/holder.js"></script>
+  
+
+</body></html>
