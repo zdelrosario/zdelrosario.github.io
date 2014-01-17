@@ -100,7 +100,38 @@
     </div>
     
     <hr id="sound">
-    <h2>Interactive Sound Installation <small>Computer Music</small></h2>
+    <!--Computer Music -->
+    <div class="row featurette">
+        <div class="col-md-5">
+          <img src="http://i3.kym-cdn.com/photos/images/original/000/600/892/480.gif" class="featurette-image img-responsive img-rounded" data-src="http://i3.kym-cdn.com/photos/images/original/000/600/892/480.gif" alt="dirigible">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Interactive Sound Installation <span class="text-muted">Computer Music</span></h2>
+          <h1>Overview</h1>
+          <p class="lead">In this project, I used a Raspberry Pi to take data from ultrasonic rangefinders and generate paramaterized sound through Pure Data. The project (for me) served as an introduction to development in Linux, and an interesting exercise in device interfacing and data multiplexing.</p>
+          <h2>Keywords</h2>
+          <p class="lead">circuit design, electrical prototyping, embedded devices, Linux, information technology</p>
+        </div>
+    </div>
+    
+    <div class="row featurette">
+        <div class="col-md-7">
+          <h4>Course Description</h4>
+          <p>Computer Music is a course offered at Wellesley College which focuses on using computers and electronics in music. The class content includes working with microphones, audio interfaces, and software such as Logic Pro, Ableton Live, MaxMSP, and Pure Data. The final project was fairly open-ended, with most students doing live performances using techniques taught in class. I elected instead to build upon my experience with electronics and build a sound installation.</p>
+          <h4>Project Description</h4>
+          <p>My goals with this project were to create an autonomous system which could handle simultaneous input from multiple users, and create interesting sounds based on collaborative user input. I selected a Raspberry Pi to serve as the computational unit for the system, which provided the capability to run Pure Data without external dependencies. This choice introduced me to developing in Linux, and required me to learn a number of information technology (IT) skills (setting up a headless machine, using SSH and FTP, etc.).</p>
+          
+          <p>For user interaction, I settled on ultrasonic rangefinders for their ease of use and interaction potential. However, I quickly ran into issues running multiple sensors with one Raspberry Pi, as the device has only one (native) serial port. Having multiple devices talking on the same port with an identical communication protocol rendered data unusable. I solved this issue my introducing a 4-to-1 multiplexer between the rangefinders and the Pi - the Raspberry Pi uses two digital pins to select one rangefinder at a time, and receives data from that rangefinder only. The Pi uses a Python script to synchronize its cycling of target with the arrival of packets to ensure it samples each rangefinder as quickly as possible. The final software package performs the aforementioned switching, error handling, and messaging to a Pure Data patch, which runs in parallel with the Python script.</p>
+          
+          <p>If interested, please see my <a href="https://github.com/zdelrosario/crazysounds">public repo</a> for code used in this project.</p>
+        </div>
+        <div class="col-md-5">
+          <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+          <iframe class="hidden-xs" allowfullscreen="" width="560" height="315" src="//www.youtube.com/embed/SkHHq3RvEBQ" frameborder="0"></iframe>
+          <iframe class="visible-xs" allowfullscreen="" src="//www.youtube.com/embed/SkHHq3RvEBQ" frameborder="0"></iframe>
+          </div>
+        </div>
+    </div>
     
     <hr class="featurette-divider" id="poe">
     <!--POE -->
@@ -133,7 +164,7 @@
           <h4>Communication Protocol</h4>
           <p>For an extensive description of this system, please visit the <a href="http://poe.olin.edu/poe2013/s_engr2210-fly-high/software.html">project site</a> for further details. For a short description, please keep reading! Our chosen wireless solution for the project was an XBee series 1 module, which effectively works as a wireless serial port. This is a very simple, fairly low-level communication protocol which provides few tools to organize communication between devices. My work focused on devising a 'handshake' method to synchronize communications between the dirigible and the base station, which ultimately allowed for multiplexing data, synchronizing messages, and detecting packet errors.</p>
           <h4>Electronics Package</h4>
-          <p>Again, for an extensive description of this system, please see <a href="http://poe.olin.edu/poe2013/s_engr2210-fly-high/electronics.html">this website</a>. The electrical subsystem for the dirigible is fairly straightforward. The system is based around an Arduino Pro Mini, and serves to regulate the input voltage from the battery, and interface the Arduino with two servos and two DC motors driving propellers. I developed the system by first assembling the system components in a piecewise fashion, eventually assembling a 'roadkill' functional mockup of the entire system. Once all components were functioning properly, I designed a permanent system and soldered together components on perforated prototyping board.</p>
+          <p>Again, for an extensive description of this system, please see this <a href="http://poe.olin.edu/poe2013/s_engr2210-fly-high/electronics.html">website</a>. The electrical subsystem for the dirigible is fairly straightforward. The system is based around an Arduino Pro Mini, and serves to regulate the input voltage from the battery, and interface the Arduino with two servos and two DC motors driving propellers. I developed the system by first assembling the system components in a piecewise fashion, eventually assembling a 'roadkill' functional mockup of the entire system. Once all components were functioning properly, I designed a permanent system and soldered together components on perforated prototyping board.</p>
           <h4>Project Management</h4>
           In order to gain manangerial experience, I decided to serve as the Project Manager (PM) for my team. My role as PM included identifying the critical path to project completion, breaking that path down into manageable chunks of work and clear milestones, and tracking progress towards those goals. I tried to maintain a hands-off approach to PM'ing, electing to meerly track progress and avoid working on tasks assigned to other people. Ultimately, we finished our minimum deliverable a week ahead of schedule.
           <p>For more information, please visit this <a href="http://poe.olin.edu/poe2013/s_engr2210-fly-high/index.html"> website</a>.</p>
