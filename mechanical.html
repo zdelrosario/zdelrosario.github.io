@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="main_files/bootstrap.css" rel="stylesheet">
+    <link href="main_files/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -62,12 +63,75 @@
     
     <div class="container">
         <h1>Mechanical Projects</h1>
-        <p class="lead">The following is a collection of mechanical design projects I've worked on over the past few years, starting with the most recent.</p>
+        
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2 class="inline-header">
+              <a href="#mechdesign">Designing a Bipedal Walking Robot</a> <small><span class="glyphicon glyphicon-user"></span> 6 <span class="glyphicon glyphicon-wrench"></span> SolidWorks, MATLAB</small>
+            </h2> 
+          </div>
+        </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2 class="inline-header">
+              <a href="#dn24">24 Hour Design Challenge</a> <small><span class="glyphicon glyphicon-user"></span> 5 <span class="glyphicon glyphicon-wrench"></span> SolidWorks, 3D Printer, Laser Cutter</small>
+            </h2>
+          </div>
+        </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2 class="inline-header">
+              <a href="#scope">SCOPE</a> <small><span class="glyphicon glyphicon-user"></span> 5 <span class="glyphicon glyphicon-wrench"></span> SolidWorks, NASTRAN/PATRAN</small>
+            </h2>
+          </div>
+        </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2 class="inline-header">
+              <a href="#chute">Chute Door Opener</a> <small><span class="glyphicon glyphicon-user"></span> 1 <span class="glyphicon glyphicon-wrench"></span> SolidWorks, Vertical Mill, Lathe, TIG Welder</small>
+            </h2>
+          </div>
+        </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2 class="inline-header">
+              <a href="#turbine">Tesla Turbine</a> <small><span class="glyphicon glyphicon-user"></span> 1 <span class="glyphicon glyphicon-wrench"></span> Vertical Mill, Lathe</small>
+            </h2>
+          </div>
+        </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2 class="inline-header">
+              <a href="#hand">Underactuated Hand</a> <small><span class="glyphicon glyphicon-user"></span> 4 <span class="glyphicon glyphicon-wrench"></span> SolidWorks, </small>
+            </h2>
+          </div>
+        </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2 class="inline-header">
+              <a href="#taylor">Taylor-Couette Flow</a> <small><span class="glyphicon glyphicon-user"></span> 3 <span class="glyphicon glyphicon-wrench"></span> MATLAB </small>
+            </h2>
+          </div>
+        </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2 class="inline-header">
+              <a href="#desnat">Designing an RC Toy</a> <small><span class="glyphicon glyphicon-user"></span> 4 <span class="glyphicon glyphicon-wrench"></span> SolidWorks, </small>
+            </h2>
+          </div>
+        </div>
     </div>
     
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="mechdesign">
     <!--Mech Design -->
-    <div class="row featurette" id="mechdesign">
+    <div class="row featurette">
         <div class="col-md-5">
           <img src="images/jimmy1.jpg" class="featurette-image img-responsive img-rounded" data-src="images/jimmy1.jpg" alt="jimmy1">
         </div>
@@ -97,9 +161,9 @@
     <div id="demo" class="collapse in">...</div> -->
 
     
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="dn24">
     <!--24 Hour Des Nat -->
-    <div class="row featurette" id="dn24">
+    <div class="row featurette">
         <div class="col-md-5">
           <img src="images/dn24_1.jpg" class="featurette-image img-responsive img-rounded" data-src="images/dn24_1.jpg" alt="dn24_1">
         </div>
@@ -141,9 +205,9 @@
         </div>
     </div>
     
-        <hr class="featurette-divider">
+        <hr class="featurette-divider" id="scope">
     <!--Boeing/Scope -->
-    <div class="row featurette" id="scope">
+    <div class="row featurette">
         <div class="col-md-5">
           <img src="images/scope.jpg" class="featurette-image img-responsive img-rounded" data-src="images/scope.jpg" alt="scope">
         </div>
@@ -156,9 +220,9 @@
         </div>
     </div>
     
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="chute">
     <!--Chute Opener -->
-    <div class="row featurette" id="chute">
+    <div class="row featurette">
         <div class="col-md-5">
           <img src="images/chute_opener.jpg" class="featurette-image img-responsive img-rounded" data-src="images/chute_opener.jpg" alt="chute_opener">
         </div>
@@ -181,9 +245,9 @@
       <p>The rightmost bar in the image above is the driving bar, which is connected to the handle via keyed shaft. This drives the linkage system, which pulls a Delrin interface bar, which connects to the chute door via a simple sheet-metal bracket. An easy quarter-turn of the handle slides the chute door open or closed. This new mechanism is a vast improvement over the old method actuating the door (by waving a PVC tube around until it catches the lip and opens the door).</p>
     </div>
     
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="turbine">
     <!--Turbine -->
-    <div class="row featurette" id="turbine">
+    <div class="row featurette">
         <div class="col-md-5">
           <img src="images/turbine.jpg" class="featurette-image img-responsive img-rounded" data-src="images/turbine.jpg" alt="turbine">
         </div>
@@ -210,9 +274,9 @@
         </div>
     </div>
     
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="hand">
     <!--Mech Proto Hand -->
-    <div class="row featurette" id="turbine">
+    <div class="row featurette">
         <div class="col-md-5">
           <img src="images/hand.png" class="featurette-image img-responsive img-rounded" data-src="images/hand.png" alt="hand">
         </div>
@@ -238,12 +302,12 @@
     <!-- <hr class="featurette-divider">
     <h2 id="uocd">The Experience Recorder <small>User Oriented Collaborative Design</small></h2> -->
     
-    <hr class="featurette-divider">
-    <h2 id="24Hour">Studying Taylor-Couette Flow <small>Partial Differential Equations</small></h2>
+    <hr class="featurette-divider" id="taylor">
+    <h2>Studying Taylor-Couette Flow <small>Partial Differential Equations</small></h2>
     <p>Coming soon...</p>
     
-    <hr class="featurette-divider">
-    <h2 id="desnat">Designing a Bio-Inspired Children's Toy <small>Design Nature</small></h2>
+    <hr class="featurette-divider" id="desnat">
+    <h2>Designing a Bio-Inspired Children's Toy <small>Design Nature</small></h2>
     <p>Coming soon...</p>
     
     <hr class="featurette-divider">
