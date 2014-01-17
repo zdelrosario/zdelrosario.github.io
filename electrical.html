@@ -90,15 +90,52 @@
       
     </div>
     
-    <hr class="featurette-divider" id="sound">
+    <hr id="sound">
     <h2>Interactive Sound Installation <small>Computer Music</small></h2>
     
     <hr class="featurette-divider" id="poe">
-    <h2>Remote Control Dirigible <small>Principles of Engineering</small></h2>
+    <!--POE -->
+    <div class="row featurette">
+        <div class="col-md-5">
+          <img src="images/dirigible.jpg" class="featurette-image img-responsive img-rounded" data-src="images/dirigible.jpg" alt="dirigible">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Remote Control Dirigible <span class="text-muted">Principles of Engineering</span></h2>
+          <h1>Overview</h1>
+          <p class="lead">In this project, I worked on a four-person team to design and fabricate a remote control dirigible. My technical focus was on the electrical and software side of the project, particularly designing the wireless communication protocol, and designing/assembling the electrical subsystem. I also served as the project manager for this endeavor.</p>
+          <h2>Keywords</h2>
+          <p class="lead">circuit design, electrical prototyping, embedded devices, communication protocol design, wireless communication, project management</p>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="container">
+        <h4>Course Description</h4>
+        <p>Principles of Engineering is meant to be an introduction to truly multidisciplinary engineering projects. The course consists of a few short labs focused on concepts from different fields, then culminates in a major project. The final project is very open ended, and has few requirements: a $250 budget, and significant electrical, software, and mechanical components. For our project, we decided to build a remote control dirigible.</p>
+    </div>
+    
+    <hr>
+    
+    <div class="row featurette">
+        <div class="col-md-7">
+          <h4>Project Description</h4>
+          <p>I had two primary roles on this team: designing the communication protocol between the dirigible and its base station, and developing the electronics package to drive the system. Both of these tasks were far outside my skillset at the time, but I sought to broaden my toolset by taking on these challenges.</p>
+          <h4>Communication Protocol</h4>
+          <p>For an extensive description of this system, please visit the <a href="http://poe.olin.edu/poe2013/s_engr2210-fly-high/software.html">project site</a> for further details. For a short description, please keep reading! Our chosen wireless solution for the project was an XBee series 1 module, which effectively works as a wireless serial port. This is a very simple, fairly low-level communication protocol which provides few tools to organize communication between devices. My work focused on devising a 'handshake' method to synchronize communications between the dirigible and the base station, which ultimately allowed for multiplexing data, synchronizing messages, and detecting packet errors.</p>
+          <h4>Electronics Package</h4>
+          <p>Again, for an extensive description of this system, please see <a href="http://poe.olin.edu/poe2013/s_engr2210-fly-high/electronics.html">this website</a>. The electrical subsystem for the dirigible is fairly straightforward. The system is based around an Arduino Pro Mini, and serves to regulate the input voltage from the battery, and interface the Arduino with two servos and two DC motors driving propellers. I developed the system by first assembling the system components in a piecewise fashion, eventually assembling a 'roadkill' functional mockup of the entire system. Once all components were functioning properly, I designed a permanent system and soldered together components on perforated prototyping board.</p>
+          <h4>Project Management</h4>
+          In order to gain manangerial experience, I decided to serve as the Project Manager (PM) for my team. My role as PM included identifying the critical path to project completion, breaking that path down into manageable chunks of work and clear milestones, and tracking progress towards those goals. I tried to maintain a hands-off approach to PM'ing, electing to meerly track progress and avoid working on tasks assigned to other people. Ultimately, we finished our minimum deliverable a week ahead of schedule.
+          <p>For more information, please visit this <a href="http://poe.olin.edu/poe2013/s_engr2210-fly-high/index.html"> website</a>.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="images/poe_schematic.png" class="featurette-image img-responsive img-rounded" data-src="images/poe_schematic.png" alt="scheme">
+        </div>
+    </div>
     
     <hr class="featurette-divider" id="game">
     <h2>Python Game Engine <small>Personal</small></h2>
-    
     <hr class="featurette-divider">
 
       <!-- FOOTER -->
@@ -108,6 +145,7 @@
       </footer>
 
     </div><!-- /.container -->
+    
 
 
     <!-- Bootstrap core JavaScript
