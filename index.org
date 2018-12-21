@@ -14,7 +14,8 @@
 [[./images/zdr2.jpg]]
 
 This is my personal site: It's essentially an extended CV. See [[./zdr_cv.pdf][this]] for my more
-traditional CV.
+traditional CV. My email is zdrcrow@stanford.edu (remove any corvids if you're
+not a robot).
 
 * Mission and Skills
 :properties:
