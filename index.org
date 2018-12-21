@@ -9,13 +9,22 @@
 :custom_id: sec:hello
 :end:
 
-#+caption: Hi! Welcome to my personal site.
+I'm an Engineering PhD candidate at Stanford's Aeronautics and Astronautics
+department.
+
+#+caption: Hi! This is what I look like.
 #+attr_html: :width 400px
 [[./images/zdr2.jpg]]
 
-This is my personal site: It's essentially an extended CV. See [[./zdr_cv.pdf][this]] for my more
-traditional CV. My email is zdrcrow@stanford.edu (remove any corvids if you're
-not a robot).
+Quick info:
+
+| Extended CV    | This website!                          |
+| Traditional CV | [[./zdr_cv.pdf][This link]]                              |
+| Email          | zdrcrow@stanford.edu                   |
+|                | (Remove corvids if you're not a robot) |
+| Likes          | Absurdist British comedy               |
+| Dislikes       | Awful Christmas music                  |
+| Mission        | /Managing uncertainty/                 |
 
 * Mission and Skills
 :properties:
@@ -52,10 +61,10 @@ Corp., which directly led to my work on [[#subsec:margin][principled margin]].
 :end:
 
 While at Stanford, I've had the great fortune to learn from classical
-statisticians ([[https://statistics.stanford.edu/people/art-b-owen][Art Owen)]] and data scientists ([[http://hadley.nz/][Hadley Wickham)]]. I'm an alum of
+statisticians ([[https://statistics.stanford.edu/people/art-b-owen][Art Owen)]] and data scientists ([[http://hadley.nz/][Hadley Wickham]]). I'm an alum of
 the [[https://datalab.stanford.edu/challenge-lab][Data Challenge Lab]], and I incorporate statistics and data science in my
-research, teching, and service. My graduate training in statistics has enabled
-me to pursue a more rigorous treatment of uncertainty in my work on [[#subsec:margin][principled
+research, teaching, and service. My graduate training in statistics has enabled
+me to pursue a rigorous treatment of uncertainty in my work on [[#subsec:margin][principled
 margin]], and my training in data science and visualization has influenced my work
 on [[#subsec:insight][algorithms for insight]].
 
@@ -75,11 +84,12 @@ recognized by Stanford VPTL for my teaching abilities, and was hired as a
 :custom_id: sec:research
 :end:
 
-I am interested in how information flows through the engineering design process.
-Modern advances in data collection, computation, and algorithms have opened the
-door to new ways to find engineering and scientific insights. These developments
-enable new approaches to old engineering problems, and promise increased
-efficiency and safety.
+I am interested in how information -- in a broad sense -- flows through the
+engineering design process. Modern advances in data collection, computation, and
+algorithms have opened the door to new ways to find engineering and scientific
+insights. These developments enable new approaches to old engineering problems,
+and promise increased efficiency and safety. The following are major themes of
+my research:
 
 ** Principled Margin
 :properties:
@@ -87,8 +97,11 @@ efficiency and safety.
 :end:
 
 Engineers design safe solutions for human needs. Designers achieve safety in
-part through engineering margins. My work on Principled Margin is focused on
-deriving data-driven engineering margins with provable properties.
+part through /engineering margins/ -- essentially 'padding' in the quantitative
+values used for design. If you've ever put aside money for a rainy day, you're
+not just fiscally responsible -- you've built margin into your finances! My work
+on principled margin is focused on deriving data-driven engineering margins with
+provable properties.
 
 Selected Publications:
 - "Cutting the Double Loop: Theory and Algorithms for Reliability-Based Design
@@ -104,7 +117,7 @@ Selected Publications:
   work, I further develop the techniques introduced in "Cutting the Double
   Loop", and introduce algorithmic advances to enable fast computation of
   precision margin. With my collaborator [[http://adl.stanford.edu/people/rickfenrich.html][Rick Fenrich]], we demonstrate these
-  techniques on the design of a complex, multi-physics supersonic nozle.
+  techniques on the design of a complex, multi-physics supersonic nozzle.
 
 #+caption: Schematic depiction of nozzle design. With Rick, I demonstrated that designing this expensive, complex engineering system with principled margin is feasible.
 #+attr_html: :width 400px
@@ -152,11 +165,11 @@ Spring quarter of 2019. I'll have more to say about this after that point....
 I have been a [[https://teachingcommons.stanford.edu/ta-support/grad-teaching-stanford/liaisons-and-consultants-programs/become-vptl-consultant][Teaching Consultant]] with the Office of the Vice Provost for
 Teaching and Learning (VPTL) since the Autumn of 2018. As a consultant, I have
 been recognized for my teaching skills, and leverage these abilities to train my
-peers. Through VPTL I provide a variety of professional-development services to
-other Stanford graduate students, aimed at helping them improve their teaching
-skills. I leverage a combination of in-class experience and knowledge of the
-education literature in these consultations, and strive to help folks recognize
-and develop their unique teaching style.
+peers. Through VPTL I provide a variety of professional-development services and
+workshops to other Stanford graduate students, aimed at helping them improve
+their teaching skills. I leverage a combination of in-class experience and
+knowledge of the education literature in these consultations, and strive to help
+folks recognize and develop their unique teaching style.
 
 * Service
 :properties:
@@ -170,12 +183,15 @@ and develop their unique teaching style.
 
 I have been involved with the [[https://www.asee.org/][American Society for Engineering Education]] (ASEE),
 [[http://asee.stanford.edu][Stanford Chapter]] since 2016. Now I serve as the chapter president, organizing
-our portfolio of events with our officer team. Stanford ASEE offers a seminar
-sequence and annual colloquium. During my work with the chapter, we produced the
-2018 Colloquium on [[https://web.stanford.edu/group/asee/cgi-bin/wordpress/events/current-years-events/][Education at Scale]], which examined the challenges and
-opportunities of scale facing educators in the modern context. We also
-introduced a journal club, which allows members to dig more deeply into the
-education literature.
+our portfolio of events with our officer team. My goal as president has been to
+build a robust community of educators at Stanford, providing a network for those
+students, staff, and faculty who are passionate about education.
+
+Stanford ASEE offers a seminar sequence and annual colloquium. During my work
+with the chapter, we produced the 2018 Colloquium on [[https://web.stanford.edu/group/asee/cgi-bin/wordpress/events/current-years-events/][Education at Scale]], which
+examined the challenges and opportunities of scale facing educators in the
+modern context. We also introduced a journal club, which allows members to dig
+more deeply into the education literature, and connect with fellow educators.
 
 #+caption: ASEE Breakfast Chat featuring Prof. Sheri Sheppard.
 #+attr_html: :width 400px
@@ -189,16 +205,49 @@ education literature.
 With my labmate Ohi Dibua, I founded [[http://seeme.stanford.edu][SeeME]] in the fall of 2016. SeeME is an
 outreach program hosted by Stanford Mechanical Engineering which seeks to 1. Get
 kids from traditionally underrepresented backgrounds excited about science and
-engineering, and 2. equip Stanford graduate students with teaching and speaking
+engineering, and 2. Equip Stanford graduate students with teaching and speaking
 skills. Our inaugural event was well-received, and garnered support from both
 the department and the [[https://news.stanford.edu/2018/04/30/graduate-students-teach-local-teens-engineering/][university at large]].
 
 *** Outreach Activities
+Currently, SeeME runs an annual outreach event. We bring roughly 50 middle- and
+high-school aged students to Stanford's campus through program-sponsored
+transportation, in order for attendees to take part in graduate-student led
+courses on engineering topics. Past classes have covered bird flight, autonomous
+cars, mathematical modeling for disease control, and many other topics. Our
+program was founded specifically to reach traditionally underrepresented groups,
+and we are constantly striving to improve our efforts.
+
 #+caption: SeeME team and students, 2017.
 #+attr_html: :width 400px
 [[./images/seeme2017.png]]
 
+More recently we have taken SeeME on the road. We brought a fluid mechanics demo
+to the Bay Area Science Festival in November of 2018. This was an excellent
+chance to introduce flow visualization to young kids, get them thinking about
+fluid mechanics in the air around them, and advertise our annual event. We are
+currently working to expand SeeME's offerings, in order to achieve a more
+sustained impact on our broader community.
+
+#+caption: SeeME at the Bay Area Science Festival, 2018.
+#+attr_html: :width 400px
+[[./images/basf_students.jpg]]
+
 *** Personal Contribution
+My specific contributions to SeeME have been in spearheading its founding,
+helping to define its mission and establishing it as a supported part of the
+Mechanical Engineering Department at Stanford.
+
+Today I serve as SeeME's Director of Curriculum: My job is to ensure SeeME
+executes on goal 2: Equip Stanford graduate students with teaching and speaking
+skills. I do this by leveraging my experience and contacts as a [[#subsec:vptl][VPTL teaching
+consultant]], organizing workshops to train our teachers and provide them guidance
+on course design -- a task many of them have never done before. I also organize
+our annual 'dress rehearsal', which gives our teachers a chance to practice
+their course, and gain targeted, timely feedback. I am also involved with with
+the miscellaneous tasks needed to make SeeME happen; I often take part in our
+annual event's opening ceremony with my "Engineering is for Everyone" activity.
+
 #+caption: Leading my "Engineering is for Everyone" activity at SeeMe 2017.
 #+attr_html: :width 400px
 [[./images/zdr_seeme.png]]
