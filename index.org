@@ -1,0 +1,207 @@
+#+title: Zach del Rosario
+#+author: Zachary del Rosario
+#+INFOJS_OPT: view:showall toc:nil mouse:#cccccc
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="org.css"/>
+#+OPTIONS: html-postamble:nil
+
+* Hello!
+:properties:
+:custom_id: sec:hello
+:end:
+
+#+caption: Hi! Welcome to my personal site.
+#+attr_html: :width 400px
+[[./images/zdr2.jpg]]
+
+This is my personal site: It's essentially an extended CV. See [[./zdr_cv.pdf][this]] for my more
+traditional CV.
+
+* Mission and Skills
+:properties:
+:custom_id: sec:mission
+:end:
+
+I believe false certainty is one of the greatest challenges we face in the 21st
+century. False certainty contributed to voter complacency in the 2016
+election.cite:silver2017 Citing a lack of certainty is the favorite tactic of
+climate change deniers.cite:shapiro2018 Generally, people tend to seek absolute
+knowledge where it does not exist, closing themselves off from the possibility
+of learning. My research, teaching, and service are all connected to the same
+goal -- helping us manage uncertainty.
+
+
+I have a unique blend of skills that I leverage in my work:
+** Human-centered Engineering
+:properties:
+:custom_id: subsec:engineer
+:end:
+
+I first trained as a mechanical engineer at [[http://www.olin.edu/][Olin College of Engineering]], whose
+curriculum emphasizes a [[http://www.olin.edu/academics/curriculum/][people-first]] approach to problem solving. There I
+developed the tools and mindset to identify and frame human problems -- a
+skillset I carried to my graduate studies. At Stanford I am pursuing a PhD in
+Aerospace Engineering under the supervision of [[http://web.stanford.edu/~jops][Gianluca Iaccarino]] and [[https://statistics.stanford.edu/people/art-b-owen][Art Owen]].
+This unique combination of investigative and analytic skills enabled me to
+effectively interview numerous engineers while interning at Northrop Grumman
+Corp., which directly led to my work on [[#subsec:margin][principled margin]].
+
+** Statistics and Data Science
+:properties:
+:custom_id: subsec:stats
+:end:
+
+While at Stanford, I've had the great fortune to learn from classical
+statisticians ([[https://statistics.stanford.edu/people/art-b-owen][Art Owen)]] and data scientists ([[http://hadley.nz/][Hadley Wickham)]]. I'm an alum of
+the [[https://datalab.stanford.edu/challenge-lab][Data Challenge Lab]], and I incorporate statistics and data science in my
+research, teching, and service. My graduate training in statistics has enabled
+me to pursue a more rigorous treatment of uncertainty in my work on [[#subsec:margin][principled
+margin]], and my training in data science and visualization has influenced my work
+on [[#subsec:insight][algorithms for insight]].
+
+** Pedagogy
+:properties:
+:custom_id: subsec:teacher
+:end:
+
+I have also pursued formal training in teaching at Stanford. I had the great
+fortune to learn from [[https://profiles.stanford.edu/sheri-sheppard][Sheri Sheppard]], both through her class on course design
+(ENGR 312), and through collaborating on [[#subsec:asee][ASEE Stanford Chapter]] events. I was
+recognized by Stanford VPTL for my teaching abilities, and was hired as a
+[[#subsec:vptl][teaching consultant]] in the autumn of 2018.
+
+* Research
+:properties:
+:custom_id: sec:research
+:end:
+
+I am interested in how information flows through the engineering design process.
+Modern advances in data collection, computation, and algorithms have opened the
+door to new ways to find engineering and scientific insights. These developments
+enable new approaches to old engineering problems, and promise increased
+efficiency and safety.
+
+** Principled Margin
+:properties:
+:custom_id: subsec:margin
+:end:
+
+Engineers design safe solutions for human needs. Designers achieve safety in
+part through engineering margins. My work on Principled Margin is focused on
+deriving data-driven engineering margins with provable properties.
+
+Selected Publications:
+- "Cutting the Double Loop: Theory and Algorithms for Reliability-Based Design
+  Optimization with Statistical Uncertainty":cite:zdr2018_double_loop In this
+  work, I derive a /provably-conservative design margin/ for engineering design
+  under uncertainty.
+
+#+caption: Example results from "Cutting the Double Loop"; my novel margin in probability (MIP) approach is provably-conservative, leading to quantifiable properties in the resulting design.
+#+attr_html: :width 400px
+[[./images/M_tension.jpg]]
+
+- "Beyond Basis Values: Fast Precision Margin with FORM":cite:zdr2019 In this
+  work, I further develop the techniques introduced in "Cutting the Double
+  Loop", and introduce algorithmic advances to enable fast computation of
+  precision margin. With my collaborator [[http://adl.stanford.edu/people/rickfenrich.html][Rick Fenrich]], we demonstrate these
+  techniques on the design of a complex, multi-physics supersonic nozle.
+
+#+caption: Schematic depiction of nozzle design. With Rick, I demonstrated that designing this expensive, complex engineering system with principled margin is feasible.
+#+attr_html: :width 400px
+[[./images/nozzle_parameters.png]]
+
+** Algorithms for Insight
+:properties:
+:custom_id: subsec:insight
+:end:
+
+The pace and output of engineering and science has changed. Where the analysts
+of yesterday made brilliant insights based on sparse observations, today's
+engineers and scientists are faced with a torrent of conflicting data. My work
+on Algorithms for Insight is focused on physics-constrained algorithms to
+extract relevant insights.
+
+Selected Publications:
+- "Developing Design Insight Through Active Subspaces":[[cite:zdr2017]] In this
+  /award-winning/ paper (Jefferson Goblet, AIAA SciTech 2017), I demonstrate the
+  use of modern model-reduction techniques to gain qualitative insights into
+  engineering systems. For instance, I show that one can recover classical
+  insights into aircraft design through an /automated, data-driven approach/.
+
+- "Lurking Variable Detection via Dimensional Analysis":cite:zdr2017f In this
+  work, I introduce techniques to detect /unknown unknowns/, so-called lurking
+  variables. These techniques are based on classical ideas of /dimensional
+  analysis/ -- the idea that physical phenomena are ultimately independent of
+  human-defined measurement systems. I re-interpret this classic insight in a
+  modern context to enable lurking variable detection.
+
+* Teaching
+** ME 470: Uncertainty Quantification
+:properties:
+:custom_id: subsec:me470
+:end:
+
+I will be teaching the Stanford course ME 470: Uncertainty Quantification in the
+Spring quarter of 2019. I'll have more to say about this after that point....
+
+** VPTL Teaching Consultant
+:properties:
+:custom_id: subsec:vptl
+:end:
+
+I have been a [[https://teachingcommons.stanford.edu/ta-support/grad-teaching-stanford/liaisons-and-consultants-programs/become-vptl-consultant][Teaching Consultant]] with the Office of the Vice Provost for
+Teaching and Learning (VPTL) since the Autumn of 2018. As a consultant, I have
+been recognized for my teaching skills, and leverage these abilities to train my
+peers. Through VPTL I provide a variety of professional-development services to
+other Stanford graduate students, aimed at helping them improve their teaching
+skills. I leverage a combination of in-class experience and knowledge of the
+education literature in these consultations, and strive to help folks recognize
+and develop their unique teaching style.
+
+* Service
+:properties:
+:custom_id: sec:service
+:end:
+
+** ASEE Stanford Chapter President
+:properties:
+:custom_id: subsec:asee
+:end:
+
+I have been involved with the [[https://www.asee.org/][American Society for Engineering Education]] (ASEE),
+[[http://asee.stanford.edu][Stanford Chapter]] since 2016. Now I serve as the chapter president, organizing
+our portfolio of events with our officer team. Stanford ASEE offers a seminar
+sequence and annual colloquium. During my work with the chapter, we produced the
+2018 Colloquium on [[https://web.stanford.edu/group/asee/cgi-bin/wordpress/events/current-years-events/][Education at Scale]], which examined the challenges and
+opportunities of scale facing educators in the modern context. We also
+introduced a journal club, which allows members to dig more deeply into the
+education literature.
+
+#+caption: ASEE Breakfast Chat featuring Prof. Sheri Sheppard.
+#+attr_html: :width 400px
+[[./images/asee.jpg]]
+
+** SeeME co-Founder and Director of Curriculum
+:properties:
+:custom_id: subsec:seeme
+:end:
+
+With my labmate Ohi Dibua, I founded [[http://seeme.stanford.edu][SeeME]] in the fall of 2016. SeeME is an
+outreach program hosted by Stanford Mechanical Engineering which seeks to 1. Get
+kids from traditionally underrepresented backgrounds excited about science and
+engineering, and 2. equip Stanford graduate students with teaching and speaking
+skills. Our inaugural event was well-received, and garnered support from both
+the department and the [[https://news.stanford.edu/2018/04/30/graduate-students-teach-local-teens-engineering/][university at large]].
+
+*** Outreach Activities
+#+caption: SeeME team and students, 2017.
+#+attr_html: :width 400px
+[[./images/seeme2017.png]]
+
+*** Personal Contribution
+#+caption: Leading my "Engineering is for Everyone" activity at SeeMe 2017.
+#+attr_html: :width 400px
+[[./images/zdr_seeme.png]]
+
+* Bibliography
+bibliography:zdrpubs.bib
+bibliographystyle:plain
