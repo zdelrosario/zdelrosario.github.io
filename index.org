@@ -157,6 +157,8 @@ Selected Publications:
 I will be teaching the Stanford course ME 470: Uncertainty Quantification in the
 Spring quarter of 2019. I'll have more to say about this after that point....
 
+For now, [[./courses/ME_470/syllabus.html][here's the syllabus]].
+
 ** VPTL Teaching Consultant
 :properties:
 :custom_id: subsec:vptl

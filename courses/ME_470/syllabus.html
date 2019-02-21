@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-02-21 Thu 08:21 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ME 470: Syllabus</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Zachary del Rosario" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="org.css"/>
+
+<script type="text/javascript" src="org-info.js">
+/**
+ *
+ * @source: org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in org-info.js.
+ *
+ * Copyright (C) 2012-2018 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "#cccccc");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "0");
+org_html_manager.set("VIEW", "showall");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">ME 470: Syllabus</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org0ba52a5">1. Introduction</a></li>
+<li><a href="#org147ffc6">2. Learning Goals</a>
+<ul>
+<li><a href="#org26dd73e">2.1. 1. How uncertainty affects conclusions in science and engineering</a></li>
+<li><a href="#org561ad65">2.2. 2. Why and how to employ practical skepticism towards models</a></li>
+<li><a href="#org2e4dba3">2.3. 3. How to handle issues of dimensionality</a></li>
+<li><a href="#org0306b07">2.4. 4. How to quantify and understand uncertainty</a></li>
+<li><a href="#org4c80b20">2.5. 5. How to propagate uncertainty</a></li>
+</ul>
+</li>
+<li><a href="#orga5b2152">3. Delivery Strategy</a>
+<ul>
+<li><a href="#org08e8e85">3.1. Format</a>
+<ul>
+<li><a href="#org143edc1">3.1.1. Lecture</a></li>
+<li><a href="#org0f3d9a3">3.1.2. Interactive Case Studies</a></li>
+<li><a href="#orge2aee69">3.1.3. Assignments</a></li>
+<li><a href="#org16ccba3">3.1.4. Project</a></li>
+<li><a href="#org15bdcc7">3.1.5. Readings</a></li>
+</ul>
+</li>
+<li><a href="#orga926e42">3.2. Assignments</a></li>
+<li><a href="#org3c25674">3.3. Logistics and Procedures</a></li>
+<li><a href="#org8e12b23">3.4. Content Sequence</a></li>
+</ul>
+</li>
+<li><a href="#org9472b78">4. Evaluation</a>
+<ul>
+<li><a href="#org8ca8e81">4.1. Feedback</a></li>
+<li><a href="#orgae9b0df">4.2. Grading Philosophy</a></li>
+</ul>
+</li>
+<li><a href="#org07587be">5. Requirements</a>
+<ul>
+<li><a href="#orge55790b">5.1. Pre-requisites</a>
+<ul>
+<li><a href="#orgff79e17">5.1.1. Engineering Mathematics</a></li>
+<li><a href="#orgf097619">5.1.2. Probability</a></li>
+<li><a href="#orgfe32371">5.1.3. Statistics</a></li>
+</ul>
+</li>
+<li><a href="#org911c367">5.2. Post-requisites</a></li>
+</ul>
+</li>
+<li><a href="#orgccd2be3">6. Accessibility and Affordability</a></li>
+<li><a href="#orgdae00c7">7. Honor Code</a></li>
+<li><a href="#org4c3bc0e">8. Elastic Clause</a></li>
+</ul>
+</div>
+</div>
+<p>
+ME 470: Uncertainty Quantification: Techniques and strategies for tackling
+unknowns in science and engineering research
+</p>
+
+<div id="outline-container-org0ba52a5" class="outline-2">
+<h2 id="org0ba52a5"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Uncertainty is a challenge. Representing a lack of knowledge, uncertainty
+stymies our attempts to draw scientific conclusions, and to confidently design
+engineering solutions. Failing to account for uncertainty can lead to false
+discoveries, while over-reacting to uncertainty can lead to overbuilt
+engineering designs. Overcoming these issues requires identifying, quantifying,
+and managing uncertainties through a combination of technical skills and an
+appropriate mindset. This class will introduce modern techniques for quantifying
+and propagating uncertainty. Issues of dimensionality will be discussed.
+Emphasis will be on applying techniques in genuine applications, through
+assignments, case studies, and student-defined projects.
+</p>
+
+<p>
+Prerequisite: Basic probability and statistics at the level of CME 106 or equivalent.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org147ffc6" class="outline-2">
+<h2 id="org147ffc6"><span class="section-number-2">2</span> Learning Goals</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+In this upper-level graduate course, students will learn how to formulate,
+analyze, and solve problems subject to uncertainty. Content will include
+technical discussion of state-of-the-art methods for propagating uncertainty,
+and case studies to illustrate their usage. By the end of the course, students
+will be able to address the following:
+</p>
+</div>
+
+<div id="outline-container-org26dd73e" class="outline-3">
+<h3 id="org26dd73e"><span class="section-number-3">2.1</span> 1. How uncertainty affects conclusions in science and engineering</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+a. In the context of open-ended assignments, students will:
+</p>
+<ul class="org-ul">
+<li>Identify sources of uncertainty</li>
+<li>Determine what &#x2013; if any &#x2013; conclusions can be drawn, given uncertainty</li>
+<li>Determine what additional data would be necessary to improve the analysis</li>
+</ul>
+
+<p>
+Topics:
+</p>
+<ol class="org-ol">
+<li>Risk, model validation, decision-making under uncertainty</li>
+<li>Probability</li>
+<li>Aleatory vs epistemic uncertainty</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org561ad65" class="outline-3">
+<h3 id="org561ad65"><span class="section-number-3">2.2</span> 2. Why and how to employ practical skepticism towards models</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+a. In the context of analyzing scientific and engineering models, students will:
+</p>
+<ul class="org-ul">
+<li>Identify potential sources of model discrepancy</li>
+<li>Given data, determine the level of discrepancy with the model</li>
+<li>Use global sensitivity analysis to rank input uncertainties</li>
+<li>Survey additional techniques, including local sensitivity approaches</li>
+</ul>
+
+<p>
+Topics:
+</p>
+<ol class="org-ol">
+<li>Model-form uncertainty, model validation</li>
+<li>Sensitivity analysis</li>
+<li>Bayesian inference/calibration</li>
+<li>Nonlinear regression</li>
+<li>Model checking</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2e4dba3" class="outline-3">
+<h3 id="org2e4dba3"><span class="section-number-3">2.3</span> 3. How to handle issues of dimensionality</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+a. In the context of general uncertainty propagation, students will:
+</p>
+<ul class="org-ul">
+<li>Identify cases where dimensionality is an issue</li>
+<li>Employ dimension reduction techniques to make problems tractable</li>
+</ul>
+
+<p>
+Topics:
+</p>
+<ol class="org-ol">
+<li>Exponential cost of dimensionality</li>
+<li>Sobol' indices</li>
+<li>Active subspaces</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org0306b07" class="outline-3">
+<h3 id="org0306b07"><span class="section-number-3">2.4</span> 4. How to quantify and understand uncertainty</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+a. In the context of data, students will:
+</p>
+<ul class="org-ul">
+<li>Explore and understand data using point and interval estimates</li>
+<li>Practice data skepticism and criticism</li>
+<li>Model uncertainty</li>
+</ul>
+
+<p>
+Topics:
+</p>
+<ol class="org-ol">
+<li>Summaries</li>
+<li>Variability</li>
+<li>Regression for visualization</li>
+<li>Random variable modeling</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org4c80b20" class="outline-3">
+<h3 id="org4c80b20"><span class="section-number-3">2.5</span> 5. How to propagate uncertainty</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+a. In the context of forward propagation, students will:
+</p>
+<ul class="org-ul">
+<li>Use the delta, Monte Carlo, and quadrature methods</li>
+<li>Select a reasonable technique for the problem at hand</li>
+<li>Gain familiarity with other methods, e.g. intrusive PCE, GPR</li>
+<li>Diagnose problems in propagation</li>
+</ul>
+
+<p>
+Topics:
+</p>
+<ol class="org-ol">
+<li>Delta method</li>
+<li>Monte Carlo</li>
+<li>Polynomial chaos
+<ul class="org-ul">
+<li>Intrusive</li>
+<li>Non-intrusive</li>
+</ul></li>
+</ol>
+
+<p>
+b. In the context of inverse propagation, students will:
+</p>
+<ul class="org-ul">
+<li>Use regression and Bayesian inference</li>
+<li>Build models for inference</li>
+<li>Diagnose problems in inference, and criticize inferential models</li>
+</ul>
+
+<p>
+Topics:
+</p>
+<ol class="org-ol">
+<li>Regression
+<ul class="org-ul">
+<li>Linear</li>
+<li>Nonlinear</li>
+</ul></li>
+<li>Bayesian inference/calibration</li>
+<li>Model checking</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga5b2152" class="outline-2">
+<h2 id="orga5b2152"><span class="section-number-2">3</span> Delivery Strategy</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org08e8e85" class="outline-3">
+<h3 id="org08e8e85"><span class="section-number-3">3.1</span> Format</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Content will be delivered through a number of different formats, described
+below. All in-class delivery strategies will be adjusted to use modern,
+research-backed principles and strategies to promote learning outcomes &#x2013; active
+learning. There is a risk that upper-level graduate courses may reject these
+strategies as `hokey' or `childish' &#x2013; I point concerned students to [Freeman et
+al. (2014) PNAS], who note in their meta-analysis of active learning research
+that,
+</p>
+
+<p>
+``If the experiments analyzed (using active learning) had been conducted as
+randomized controlled trials of medical interventions, they may have been
+stopped for benefit &#x2013; meaning that enrolling patients in the control condition
+might be discontinued because the treatment being tested was clearly more
+beneficial.''
+</p>
+</div>
+
+<div id="outline-container-org143edc1" class="outline-4">
+<h4 id="org143edc1"><span class="section-number-4">3.1.1</span> Lecture</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+Much of the class format will follow a fairly traditional lecture format.
+However, I will take steps to introduce small adjustments to make lectures more
+engaging (not all active learning involves large changes!). Lectures will
+generally start with some form of <i>challenge statement</i> &#x2013; an open-ended
+question meant to get you thinking about high-level concepts. I am very much
+open to questions during lecture, and plan to turn discussion over to small
+groups or the full class as is appropriate.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0f3d9a3" class="outline-4">
+<h4 id="org0f3d9a3"><span class="section-number-4">3.1.2</span> Interactive Case Studies</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<p>
+A handful (five planned) of in-class sessions will follow a <i>lecture based
+tutoring</i> format.[Easton, (2018) ASEE] These will be interactive,
+instructor-guided, student-driven activities mean to reinforce concepts learned
+in previous lectures. I will introduce some science or engineering problem, and
+<i>execute</i> live coding to address the task in real time. However, all <i>decisions</i>
+will be given by the students. I will call on students to decide how to proceed,
+and implement those solutions: We will either find a solution to the problem
+together, or determine how proposed solutions do not work. We will rapidly
+rotate through students to engage the entire class. In this way, the class &#x2013; as
+a team &#x2013; will practice concepts, see how other students think, and discuss
+relevant content together.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge2aee69" class="outline-4">
+<h4 id="orge2aee69"><span class="section-number-4">3.1.3</span> Assignments</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<p>
+There will be a small number (four planned) of take-home problem sets, which
+will follow a fairly standard format. They will consist of a small number of
+fairly involved problems; some will be intended to solidify concepts covered in
+class, such as implenentation or derivation problems. Others will emphasize
+executive function &#x2013; I will pose an open-ended problem, and you will need to
+select and justify an approach. In all problems, the emphasis will be on
+understanding and justifying the analysis &#x2013; this will be reflected in the
+grading scheme as well.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org16ccba3" class="outline-4">
+<h4 id="org16ccba3"><span class="section-number-4">3.1.4</span> Project</h4>
+<div class="outline-text-4" id="text-3-1-4">
+<p>
+There will be a student-initiated final project; you will pose a problem you
+would like to solve, describe your approach, and summarize your findings. The
+topic can be drawn from any area (ideally your research), but must involve some
+concept discussed in class. Projects will be carried out individually; if you
+are working with other students on the same research project, you must either
+choose different topics, or split the project into different components. The
+project Report itself is intended to involve an amount of work comparable to a
+single homework assignment; however, there are additional components around the
+project (Peer Review and Presentation) that will constitute additional work.
+Accordingly, the deliverables for the project are spread over the latter half of
+the course.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orge600d06"></a>Proposal<br />
+<div class="outline-text-5" id="text-3-1-4-1">
+<p>
+By the midpoint of the class, you will submit a one-page Proposal for your
+project. In this assignment, you must
+</p>
+
+<ol class="org-ol">
+<li>Describe the problem you aim to solve</li>
+<li>State what approach you plan to use</li>
+<li>Hypothesize what will be the result</li>
+<li>State your personal learning goals for this course, and articulate how this
+project will serve those goals</li>
+</ol>
+
+<p>
+The purpose of this assignment is to ensure you are on track to deliver a
+compelling project at the end of the course.
+</p>
+</div>
+</li>
+
+<li><a id="org41f9dda"></a>Draft and Peer Review<br />
+<div class="outline-text-5" id="text-3-1-4-2">
+<p>
+In week 8, you will submit a Draft report for your project. This will be used
+for a Peer Review exercise, in which you will review two other students' draft
+work. This will primarily be an exercise in providing useful commentary on other
+researchers work &#x2013; a critical component of the academic enterprise.
+</p>
+
+<p>
+For the Draft, you must:
+</p>
+<ol class="org-ol">
+<li>Describe your problem</li>
+<li>State your approach</li>
+<li>Describe your (preliminary) results</li>
+<li>Note what you plan to do for the final submission</li>
+</ol>
+
+<p>
+For the Peer Review, you must:
+</p>
+<ol class="org-ol">
+<li>Summarize what the work aims to do</li>
+<li>State both strengths and weaknesses of the work
+<ul class="org-ul">
+<li>From a writing perspective</li>
+<li>From a technical / methodological perspective</li>
+</ul></li>
+<li>Provide recommendations on how to improve the work</li>
+</ol>
+
+<p>
+The Draft will be graded for completeness. Peer Review will be graded for
+quality, based on a provided rubric. Note that, to simulate a more 'traditional'
+peer review process, we'll leave the learning goals out of this phase. This is a
+concession to normative research values in academia, but is not a reflection of
+the value of learning goals.
+</p>
+</div>
+</li>
+
+<li><a id="orge8ae885"></a>Final Presentation<br />
+<div class="outline-text-5" id="text-3-1-4-3">
+<p>
+The final days of the class will be reserved for student Final Presentations.
+These will (aspirationally) be 15-minute talks, though depending on enrollment
+we may need to adjust this amount of time. The purpose of presentations is to
+</p>
+<ol class="org-ol">
+<li>practice communication skills, 2. introduce the class to the variety of</li>
+</ol>
+<p>
+problems being tackled in UQ, and 3. reflect on how the project (and class)
+addressed your learning goals in taking the class.
+</p>
+</div>
+</li>
+
+<li><a id="org002d67f"></a>Report<br />
+<div class="outline-text-5" id="text-3-1-4-4">
+<p>
+The final Report will be due during finals period.
+</p>
+
+<p>
+For the Report, you must:
+</p>
+<ol class="org-ol">
+<li>Describe your problem</li>
+<li>State your approach</li>
+<li>Argue how your results show that you solved the problem, OR note what would
+be necessary for more conclusive results</li>
+<li>Reflect on how this class did (or did not) match your stated learning goals</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org15bdcc7" class="outline-4">
+<h4 id="org15bdcc7"><span class="section-number-4">3.1.5</span> Readings</h4>
+<div class="outline-text-4" id="text-3-1-5">
+<p>
+I have started a <a href="https://github.com/zdelrosario/uq-primer">textbook</a> to support teaching this content; however, it will not
+be complete in time to support this offering of the course. I hope to have a few
+chapters finished in time &#x2013; particularly those that do not have a published
+equivalent.
+</p>
+
+<p>
+The following book (Smith 2014) should be considered the primary resource for
+technical details, particularly when it comes to understanding and implementing
+algorithms. Copies are available in the <a href="https://searchworks.stanford.edu/catalog?utf8=%E2%9C%93&amp;search_field=search&amp;q=uncertainty+quantification+ralph+smith">Stanford library</a>.
+</p>
+
+<p>
+Ralph Smith, <i>Uncertainty quantification: Theory, implementation, and
+applications</i> (2014) SIAM
+</p>
+
+<p>
+I will also point to technical papers when referencing material that lies
+outside the texbook.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga926e42" class="outline-3">
+<h3 id="orga926e42"><span class="section-number-3">3.2</span> Assignments</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+The majority of assignments are problem sets, with a small number of extensive
+problems intended to reinforce concepts learned in class. Each problem set will
+include at least one `open-ended' question that will stretch your executive
+reasoning, and require you to make and justify analysis choices. The project is
+essentially a large, student-defined assignment. It includes additional
+components above a normal problem set, described above.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Assignment</th>
+<th scope="col" class="org-left">Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">HW 1</td>
+<td class="org-left">Probability basics</td>
+</tr>
+
+<tr>
+<td class="org-left">HW 2</td>
+<td class="org-left">Data analysis</td>
+</tr>
+
+<tr>
+<td class="org-left">HW 3</td>
+<td class="org-left">Sensitivity analysis</td>
+</tr>
+
+<tr>
+<td class="org-left">HW 4</td>
+<td class="org-left">Forward uncertainty propagation</td>
+</tr>
+
+<tr>
+<td class="org-left">Project</td>
+<td class="org-left">Your choice</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org3c25674" class="outline-3">
+<h3 id="org3c25674"><span class="section-number-3">3.3</span> Logistics and Procedures</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+Personnel and Office Hours:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Name</td>
+<td class="org-left">Email</td>
+<td class="org-left">Office</td>
+<td class="org-left">Hours</td>
+</tr>
+
+<tr>
+<td class="org-left">Zachary del Rosario</td>
+<td class="org-left">zdr@stanford.edu</td>
+<td class="org-left">500-500H</td>
+<td class="org-left">TBD</td>
+</tr>
+
+<tr>
+<td class="org-left">Gianluca Iaccarino</td>
+<td class="org-left">jops@stanford.edu</td>
+<td class="org-left">500-500I</td>
+<td class="org-left">TBD</td>
+</tr>
+
+<tr>
+<td class="org-left">(TA TBD)</td>
+<td class="org-left">TBD</td>
+<td class="org-left">TBD</td>
+<td class="org-left">TBD</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Assignment late policy:
+</p>
+
+<p>
+Assignment due-dates are listed below in the 'Content Sequence' subsection. All
+assignments are due at the beginning of class on the specified date. Assignments
+are considered late if not submitted at the specified time. Late assignments may
+be submitted for partial credit, though they will not be graded in detail, and
+will receive a <i>maximum</i> partial credit depending on the number of late days:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">Days Late</td>
+<td class="org-right">Maximum Credit</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">75%</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">50%</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-right">25%</td>
+</tr>
+
+<tr>
+<td class="org-right">4+</td>
+<td class="org-right">0%</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Of course, in extenuating circumstances, exceptions to this policy will be made.
+Examples of reasonable exemptions include issues of health, family emergencies,
+and other unforeseeable circumstances. If you have planned events that may
+impede an assignment deadline (e.g. conference travel), please come discuss your
+situation with me, and we'll try to work something out.
+</p>
+
+<p>
+Assignment re-grade policy:
+</p>
+
+<p>
+Re-grades must be requested within one week of the assignment's return date; no
+exceptions will be made. If you think a grading decision is genuinely in error,
+please feel free to contact the teaching team (in a timely manner).
+</p>
+
+<p>
+Assignment re-submission:
+</p>
+
+<p>
+Generally, I would prefer that you take assignment feedback and incorporate it
+into future assignments. In extenuating circumstances, I may consider a
+re-submission of an assignment. In this case, the maximum grade that may be
+earned is the previous grade plus half the deficit; for example, if one scored a
+50% on an assignment, the maximum re-submission grade will be 75%.
+Re-submissions will only be accepted until a week after the relevant assignment
+has been returned.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8e12b23" class="outline-3">
+<h3 id="org8e12b23"><span class="section-number-3">3.4</span> Content Sequence</h3>
+<div class="outline-text-3" id="text-3-4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Class</th>
+<th scope="col" class="org-left">Day</th>
+<th scope="col" class="org-left">Topics</th>
+<th scope="col" class="org-left">Assignment Due</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Apr 2</td>
+<td class="org-left">Risk, validation, decision-making</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Apr 4</td>
+<td class="org-left">Representing uncertainty</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Apr 9</td>
+<td class="org-left">Case Study 1: Example project</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Apr 11</td>
+<td class="org-left">Estimation and modeling</td>
+<td class="org-left">HW 1. Prob modeling</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">Apr 16</td>
+<td class="org-left">Linear regression, intro</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">Apr 18</td>
+<td class="org-left">Linear regression as summary</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">Apr 23</td>
+<td class="org-left">Case Study 2: Data analysis</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">8</td>
+<td class="org-left">Apr 25</td>
+<td class="org-left">Dimensionality, sensitivity analysis</td>
+<td class="org-left">HW 2. Estimation and modeling</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">Apr 30</td>
+<td class="org-left">Sobol' indices (ZDR travel)</td>
+<td class="org-left">Proposal</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">May 2</td>
+<td class="org-left">Subspaces (PCA and AS)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">May 7</td>
+<td class="org-left">Case Study 3: Model assessment</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">May 9</td>
+<td class="org-left">Monte Carlo: Basics</td>
+<td class="org-left">HW 3: SA</td>
+</tr>
+
+<tr>
+<td class="org-right">13</td>
+<td class="org-left">May 14</td>
+<td class="org-left">Monte Carlo: QMC</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">14</td>
+<td class="org-left">May 16</td>
+<td class="org-left">Case Study 4: DOE</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">15</td>
+<td class="org-left">May 21</td>
+<td class="org-left">Quadrature</td>
+<td class="org-left">HW 4: Fwd propagation</td>
+</tr>
+
+<tr>
+<td class="org-right">16</td>
+<td class="org-left">May 23</td>
+<td class="org-left">PCE</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">17</td>
+<td class="org-left">May 28</td>
+<td class="org-left">Bayesian inference</td>
+<td class="org-left">Draft</td>
+</tr>
+
+<tr>
+<td class="org-right">18</td>
+<td class="org-left">May 30</td>
+<td class="org-left">MCMC</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">19</td>
+<td class="org-left">Jun 4</td>
+<td class="org-left">Case Study 5: Model-form errors</td>
+<td class="org-left">Peer Review</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">Fin</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Presentations</td>
+<td class="org-left">Report</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9472b78" class="outline-2">
+<h2 id="org9472b78"><span class="section-number-2">4</span> Evaluation</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org8ca8e81" class="outline-3">
+<h3 id="org8ca8e81"><span class="section-number-3">4.1</span> Feedback</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Both formative and summative feedback will be deployed in this class, though the
+emphasis will be on feedback to help students develop (formative), and less on
+assigning grades (summative).
+</p>
+
+<p>
+Formative feedback will be provided through in-class case studies, as I will be
+able to gauge student understanding in real-time. Additional feedback will be
+provided through peer review, as students will both get commentary on their
+work, and be afforded to see how other students conceptualize the material.
+Finally, all assignments will include some amount of open-ended problem solving
+that will require executive thought &#x2013; students are welcome and encouraged to
+attend office hours to discuss these not-straightforward problems.
+</p>
+
+<p>
+Summative feedback will be deployed in grading the assignments and final
+project. More is stated below in the Grading Philosophy.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgae9b0df" class="outline-3">
+<h3 id="orgae9b0df"><span class="section-number-3">4.2</span> Grading Philosophy</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+This is an upper-level graduate course. My assumption is that students taking
+this class are primarily engaged in research, and are now taking courses to
+support that activity. Thus, my expectation is that this class is of secondary
+importance in your current workload, and my grading philosophy is formulated
+with this assumption in mind.
+</p>
+
+<p>
+There will be four homeworks and a final project, in order to minimize the
+external workload for the class. I would like to grade the in-class assignments,
+but I realize that upper-level graduates will need to miss classes for
+conferences and the like. The class has been designed around reinforcing
+concepts through these in-class activities, so please do not take my lack of
+point assignment as an indication of the relative importance of these
+activities.
+</p>
+
+<p>
+The four homeworks will compose half of your grade, with the final project
+weighted equally. The final project is further broken down into the final report
+(delivered both through presentation and in writing), and the peer review stage.
+The relative weight of Project components is intentional.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Component</th>
+<th scope="col" class="org-left">Grade Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Homework</td>
+<td class="org-left">50%</td>
+</tr>
+
+<tr>
+<td class="org-left">- HW 1</td>
+<td class="org-left">(12.5%)</td>
+</tr>
+
+<tr>
+<td class="org-left">- HW 2</td>
+<td class="org-left">(12.5%)</td>
+</tr>
+
+<tr>
+<td class="org-left">- HW 3</td>
+<td class="org-left">(12.5%)</td>
+</tr>
+
+<tr>
+<td class="org-left">- HW 4</td>
+<td class="org-left">(12.5%)</td>
+</tr>
+
+<tr>
+<td class="org-left">Project</td>
+<td class="org-left">50%</td>
+</tr>
+
+<tr>
+<td class="org-left">- Draft</td>
+<td class="org-left">(10%)</td>
+</tr>
+
+<tr>
+<td class="org-left">- Peer review</td>
+<td class="org-left">(10%)</td>
+</tr>
+
+<tr>
+<td class="org-left">- Presentation</td>
+<td class="org-left">(15%)</td>
+</tr>
+
+<tr>
+<td class="org-left">- Report</td>
+<td class="org-left">(15%)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+It is common in upper-level graduate courses to be <i>lenient</i> in grading, and I
+have every intent to do the same in this class. You are researchers at this
+stage &#x2013; we should be beyond ``playing the game of school'' by now.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org07587be" class="outline-2">
+<h2 id="org07587be"><span class="section-number-2">5</span> Requirements</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orge55790b" class="outline-3">
+<h3 id="orge55790b"><span class="section-number-3">5.1</span> Pre-requisites</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+Since this is an upper-level graduate course, I will assume a fair amount of
+background knowledge on your part. However, I realize some topics are often not
+well-covered in a `traditional' engineering curriculum, and you may feel
+uncomfortable with some of the necessary topics. I have sequenced the content
+with this fact in mind, and make specific my expectations for background
+knowledge below.
+</p>
+</div>
+
+<div id="outline-container-orgff79e17" class="outline-4">
+<h4 id="orgff79e17"><span class="section-number-4">5.1.1</span> Engineering Mathematics</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<p>
+All students in this class should be fairly mature in their mathematical
+ability. By this I do not mean proof writing, but strong proficiency with
+calculus and linear algebra is required. Many of our motivating examples will
+come from dynamical systems, so some familiarity with ODE's will be helpful, but
+not necessary.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf097619" class="outline-4">
+<h4 id="orgf097619"><span class="section-number-4">5.1.2</span> Probability</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<p>
+Most engineering curricula include some amount of probability theory, but many
+of the engineers I know are not as comfortable manipulating random variables as
+they are PDE's. To feel comfortable in this class, you should know what a
+continuous random variable is, have seen PDF's and CDF's before, have computed
+some expectations, and have done some Gaussian manipulations at some point in
+your life. We will review probability theory, so don't worry if you need to dust
+off these skills a bit. My hope is to reactivate this knowledge, and add a
+little bit more to your understanding of random variables.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfe32371" class="outline-4">
+<h4 id="orgfe32371"><span class="section-number-4">5.1.3</span> Statistics</h4>
+<div class="outline-text-4" id="text-5-1-3">
+<p>
+Many of the engineers I know never took a statistics course; or, if they did,
+feel totally uncomfortable with even the basic concepts. We will have to play
+this topic by ear, you and I. I plan to teach the bare minimum content we'll
+need for understanding critical UQ concepts, though we may need to shuffle
+topics and borrow time, depending on how the class is feeling.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org911c367" class="outline-3">
+<h3 id="org911c367"><span class="section-number-3">5.2</span> Post-requisites</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+This course is meant to <i>start</i> a shift in your mindset and toolkit. Like any
+kind of learning, grappling with uncertainty is a lifelong journey. I recommend
+the following 'post-requisites' to build upon the ideas introduced in this
+course. Note that these are current as of the 2018-19 academic year:
+</p>
+
+<p>
+STATS 305A: Applied Statistics I
+</p>
+<ul class="org-ul">
+<li>All about (multivariate) regression, with a focus on practical concerns. I
+found this course very helpful for building intuition in statistics, but also
+found it rather challenging with an engineer's background in statistics.</li>
+</ul>
+
+<p>
+STATS 362: Topic: Monte Carlo
+</p>
+<ul class="org-ul">
+<li>Art Owen infrequently teaches this class on the Monte Carlo method. There are
+a lot of practical considerations and subtleties &#x2013; I would take it if you
+find the chance!</li>
+</ul>
+
+<p>
+CS 228: Probabilistic Graphical Models
+</p>
+<ul class="org-ul">
+<li>Specialty class on using probabilistic graphical models for (machine)
+learning. These form a very flexible, powerful framework for Bayesian
+inference, and are an exciting area of current research.</li>
+</ul>
+
+<p>
+CS 238: Decision Making under Uncertainty
+</p>
+<ul class="org-ul">
+<li>I hear wonderful things about Mykel Kochenderfer's Decision making under
+uncertainty course. He has great skill in explaining complex topics in a lucid
+way.</li>
+</ul>
+
+<p>
+ENGR 150: Data Challenge Lab
+</p>
+<ul class="org-ul">
+<li>Very unique course; by application only. Intensive course on data science &#x2013;
+teaches visualization techniques and exploratory data analysis.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgccd2be3" class="outline-2">
+<h2 id="orgccd2be3"><span class="section-number-2">6</span> Accessibility and Affordability</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+The Stanford <a href="https://diversityandaccess.stanford.edu/disability-access">Diversity and Access Office</a> provides accommodations related to
+disabilities.
+</p>
+
+<p>
+The Stanford <a href="https://financialaid.stanford.edu/grad/">Financial Aid Office</a> is your first resource for financial
+assistance. However, the Stanford <a href="https://diversityandfirstgen.stanford.edu/resources">Diversity and First-Gen Office</a> also provides
+financial assistance related to:
+</p>
+<ul class="org-ul">
+<li>Travel costs associated with a death or illness</li>
+<li>Assistance with laptop repair</li>
+<li>Medical emergencies not covered by the Financial Aid Office</li>
+<li>Attending student conferences</li>
+<li>Expenses related to family attendance of major campus events</li>
+<li>Expenses related to graduate/professional exams</li>
+</ul>
+
+<p>
+If you need further assistance or information, or just want to talk about your
+situation, please feel free to contact me.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdae00c7" class="outline-2">
+<h2 id="orgdae00c7"><span class="section-number-2">7</span> Honor Code</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+The Stanford <a href="https://communitystandards.stanford.edu/policies-and-guidance/honor-code">Honor Code</a> was written by students in 1921. While there are no
+planned exams in this course, the Honor Code still applies to assignments.
+Please do not plagiarize material on your assignments. The full Honor Code,
+including violation policies, are listed on the aforementioned website.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4c3bc0e" class="outline-2">
+<h2 id="org4c3bc0e"><span class="section-number-2">8</span> Elastic Clause</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+The instructor shall have Power to make all laws which shall be necessary and
+proper for carrying to realization the foregoing learning goals, and all other
+powers vested by this syllabus in the course of ME 470, or in any office hour or
+assignment thereof.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
