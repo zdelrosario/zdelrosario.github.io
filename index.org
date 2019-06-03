@@ -149,6 +149,25 @@ Selected Publications:
   modern context to enable lurking variable detection.
 
 * Teaching
+:properties:
+:custom_id: sec:teaching
+:end:
+
+I have taught in a number of different contexts and for diverse audiences. This
+section collects details about my teaching experiences.
+
+** Teaching Materials
+:properties:
+:custom_id: subsec:materials
+:end:
+
+I have open-sourced a number of my teaching materials. The following links point
+to these resources. If you find them helpful or have suggestions for
+improvements, please let me know!
+
+| Teaching EDA     | [[https://github.com/zdelrosario/teaching-eda][github.com/zdelrosario/teaching-eda]] |
+| Teacher Training | TODO                                |
+
 ** ME 470: Uncertainty Quantification
 :properties:
 :custom_id: subsec:me470
