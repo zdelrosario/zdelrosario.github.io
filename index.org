@@ -210,10 +210,12 @@ build a robust community of educators at Stanford, providing a network for those
 students, staff, and faculty who are passionate about education.
 
 Stanford ASEE offers a seminar sequence and annual colloquium. During my work
-with the chapter, we produced the 2018 Colloquium on [[https://web.stanford.edu/group/asee/cgi-bin/wordpress/events/current-years-events/][Education at Scale]], which
-examined the challenges and opportunities of scale facing educators in the
-modern context. We also introduced a journal club, which allows members to dig
-more deeply into the education literature, and connect with fellow educators.
+with the chapter, we produced the 2018 Colloquium on [[https://web.stanford.edu/group/asee/cgi-bin/wordpress/2018/04/11/asee-colloquium-education-at-scale-april-20th-845am-1230pm/][Education at Scale]], which
+examined the modern challenges and opportunities of scale, and the 2019
+Colloquium on [[https://web.stanford.edu/group/asee/cgi-bin/wordpress/2019/04/17/asee-colloquium-april-19th-2019/][The Fundamentals of Teaching]], where participants learned the key
+skills for effective pedagogy through interactive workshops. We also introduced
+a journal club, which allows members to dig more deeply into the education
+literature, and connect with fellow educators.
 
 #+caption: ASEE Breakfast Chat featuring Prof. Sheri Sheppard.
 #+attr_html: :width 400px
