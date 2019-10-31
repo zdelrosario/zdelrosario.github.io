@@ -210,8 +210,9 @@ I have open-sourced a number of my teaching materials. The following links point
 to these resources. If you find them helpful or have suggestions for
 improvements, please let me know!
 
-| Teaching EDA     | [[https://github.com/zdelrosario/teaching-eda][github.com/zdelrosario/teaching-eda]] |
-| Teacher Training | TODO                                |
+| Teaching EDA                   | [[https://github.com/zdelrosario/teaching-eda][Link]] |
+| Materials Informatics Workshop | [[https://citrineinformatics.github.io/ga-tech-workshop/][Link]] |
+| SeeME Teacher Training         | TODO |
 
 ** ME 470: Uncertainty Quantification
 :properties:
