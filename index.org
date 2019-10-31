@@ -32,12 +32,15 @@ Quick info:
 :end:
 
 I believe false certainty is one of the greatest challenges we face in the 21st
-century. False certainty contributed to voter complacency in the 2016
-election.cite:silver2017 Citing a lack of certainty is the favorite tactic of
-climate change deniers.cite:shapiro2018 Generally, people tend to seek absolute
-knowledge where it does not exist, closing themselves off from the possibility
-of learning. My research, teaching, and service are all connected to the same
-goal -- helping us manage uncertainty.
+century. False certainty contributed to voter complacency in the [[https://fivethirtyeight.com/features/the-real-story-of-2016/][2016 election]].
+Citing a lack of certainty is the favorite tactic of [[http://theconversation.com/the-thinking-error-at-the-root-of-science-denial-96099][climate change deniers]]. In
+my own work, I have found that the /reification/ of variable material properties
+in Engineers' minds has lead to undiagnosed vulnerabilities in the aircraft
+design process.
+
+Generally, people tend to seek absolute knowledge where it does not exist,
+closing themselves off from the possibility of learning. My research, teaching,
+and service are all connected to the same goal -- helping us manage uncertainty.
 
 
 I have a unique blend of skills that I leverage in my work:
@@ -91,7 +94,7 @@ insights. These developments enable new approaches to old engineering problems,
 and promise increased efficiency and safety. The following are major themes of
 my research:
 
-** Principled Margin
+** Principled Margin for Aircraft Design
 :properties:
 :custom_id: subsec:margin
 :end:
@@ -103,26 +106,67 @@ not just fiscally responsible -- you've built margin into your finances! My work
 on principled margin is focused on deriving data-driven engineering margins with
 provable properties.
 
-Selected Publications:
-- [[https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.6035]["Cutting the
-  Double Loop: Theory and Algorithms for Reliability-Based Design Optimization
-  with Statistical Uncertainty"]]:cite:zdr2018_double_loop In this work, I
-  derive a /provably-conservative design margin/ for engineering design under
-  uncertainty.
+*** A Dangerous, Reified Mindset
+[[https://en.wikipedia.org/wiki/Full_House:_The_Spread_of_Excellence_from_Plato_to_Darwin][Gould]] tied the notion of /reification/, "the mental conversion of a person or
+abstract concept into a thing," to failed statistical reasoning. [[http://cup.columbia.edu/book/useless-arithmetic/9780231132121][Pilkey and
+Pilkey-Jarvis]] tie this fallacy to [[https://en.wikipedia.org/wiki/Collapse_of_the_Atlantic_northwest_cod_fishery][dramatic failures]] in environmental science.
+They quote Gould to illustrate the key issue,
 
-#+caption: Example results from "Cutting the Double Loop"; my novel margin in probability (MIP) approach is provably-conservative, leading to quantifiable properties in the resulting design.
+#+begin_quote
+"We abstract the variation within a system into some measure of central tendency
+like the mean value and then make the mistake of reifying this abstraction and
+interpreting the mean as a concrete thing."
+#+end_quote
+
+Engineers also commit this reification in considering /material properties/ as
+simple, single numbers to be plugged into models. In my PhD thesis, I worked to
+articulate the failure modes of these /reification errors/ in the context of
+aircraft structural design, and developed provably safe alternatives.
+
+#+caption: /Widely-used aircraft design strategies have fundamental flaws./ The use of /basis values/---conservative, reified material properties---can lead to a misleading safe diagnosis of structures. Note that the `Apprx.` Limit State value using a basis value indicates a safe structure for `2`, while the `True` value is unsafe. This and other issues in aircraft design arise from a reified view of material properties, and require a more rigorous approach to guarantee aircraft safety.
+#+attr_html: :width 400px
+[[./images/qe-monotonicity-both.png]]
+
+*** A Provably Safer Approach
+
+Rigorously treating uncertainties in science and engineering is the study of
+[[https://en.wikipedia.org/wiki/Uncertainty_quantification][uncertainty quantification]] (UQ). As a researcher in UQ, I use a combination of
+domain knowledge of aircraft design and rigorous statistics to solve engineering
+problems. I have developed alternatives to traditional structural design
+criteria which possess /provable safety properties/. These approaches are
+data-informed to add a rigorous amount of design margin.
+
+#+caption: /Provably-conservative margins enable a user-selected safety level./ Example results from "Cutting the Double Loop"; my novel margin in probability (MIP) approach is provably-conservative, leading to quantifiable properties in the resulting design.
 #+attr_html: :width 400px
 [[./images/M_tension.jpg]]
 
-- [[https://arc.aiaa.org/doi/pdf/10.2514/6.2019-0721]["Beyond Basis Values: Fast Precision Margin with FORM"]]:cite:zdr2019 In this
-  work, I further develop the techniques introduced in "Cutting the Double
-  Loop", and introduce algorithmic advances to enable fast computation of
-  precision margin. With my collaborator [[http://adl.stanford.edu/people/rickfenrich.html][Rick Fenrich]], we demonstrate these
-  techniques on the design of a complex, multi-physics supersonic nozzle.
+*** Selected Publications
+- [[https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.6035]["Cutting the Double Loop: Theory and Algorithms for Reliability-Based Design
+  Optimization with Statistical Uncertainty"]] (2018, IJNME): In this work, I
+  introduce a framework for analyzing and formulating /rigorous design margins/
+  for engineering design under uncertainty. I derive a number of constructs,
+  including /margin in probability/ (MIP), which possesses provable safety
+  properties that satisfy current [[https://www.law.cornell.edu/cfr/text/14/25.613][FAA Regulations]].
 
-#+caption: Schematic depiction of nozzle design. With Rick, I demonstrated that designing this expensive, complex engineering system with principled margin is feasible.
-#+attr_html: :width 400px
-[[./images/nozzle_parameters.png]]
+- [[https://arc.aiaa.org/doi/pdf/10.2514/6.2019-0721]["Fast Precision Margin with the First-Order Reliability Method"]] (2019,
+  AIAA Journal): In this work, I further develop the techniques introduced in "Cutting
+  the Double Loop", and introduce algorithmic advances to enable fast
+  computation of precision margin. With my collaborator [[http://adl.stanford.edu/people/rickfenrich.html][Rick Fenrich]], we
+  demonstrate these techniques on the design of a complex, multi-physics
+  supersonic nozzle.
+
+- [[https://arc.aiaa.org/doi/pdf/10.2514/6.2019-3554]["Margin as Model: Some Answers to "How Many Tests Should I Perform?""]] (2019,
+  AIAA Aviation Forum): In this work, I apply principled margins to support
+  various engineering design questions, including the optimal allocation of a
+  test budget for materials characterization.
+
+- "When are Design Allowables Conservative?" (To be presented at AIAA SciTech
+  2020): In this work, I analyze the /design allowables framework/---the current
+  aircraft design criteria for handling uncertain material properties---in terms
+  of aircraft safety. The current criteria are safe but inefficient for simple
+  structures, but grow increasingly dangerous for more advanced, modern designs.
+  My work on Principled Margin---MIP and other constructs---provably solves
+  these issues.
 
 ** Algorithms for Insight
 :properties:
@@ -136,13 +180,13 @@ on Algorithms for Insight is focused on physics-constrained algorithms to
 extract relevant insights.
 
 Selected Publications:
-- [[https://arc.aiaa.org/doi/pdf/10.2514/6.2017-1090]["Developing Design Insight Through Active Subspaces"]]:[[cite:zdr2017]] In this
+- [[https://arc.aiaa.org/doi/pdf/10.2514/6.2017-1090]["Developing Design Insight Through Active Subspaces"]]: In this
   /award-winning/ paper (Jefferson Goblet, AIAA SciTech 2017), I demonstrate the
   use of modern model-reduction techniques to gain qualitative insights into
   engineering systems. For instance, I show that one can recover classical
   insights into aircraft design through an /automated, data-driven approach/.
 
-- [[https://epubs.siam.org/doi/abs/10.1137/17M1155508]["Lurking Variable Detection via Dimensional Analysis"]]:cite:zdr2017f In this
+- [[https://epubs.siam.org/doi/abs/10.1137/17M1155508]["Lurking Variable Detection via Dimensional Analysis"]]: In this
   work, I introduce techniques to detect /unknown unknowns/, so-called lurking
   variables. These techniques are based on classical ideas of /dimensional
   analysis/ -- the idea that physical phenomena are ultimately independent of
@@ -277,5 +321,3 @@ annual event's opening ceremony with my "Engineering is for Everyone" activity.
 [[./images/zdr_seeme.png]]
 
 * Bibliography
-bibliography:zdrpubs.bib
-bibliographystyle:plain
