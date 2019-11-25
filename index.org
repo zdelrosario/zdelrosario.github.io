@@ -236,6 +236,10 @@ Uncertainty Quantification (UQ). I designed this class partly as an introduction
 to the methods, but primarily as an introduction to the /mindset/ of how to
 manage uncertainty.
 
+#+caption: /Modeling choices tend to have far greater impact than parametric choices on an analysis./ Visual comparison of Lord Kelvin's and John Perry's analyses of earth cooling, both used to estimate the age of the earth. Note that while parametric changes (different values of L) in Perry's analysis shift the blue curves, there is a qualitative difference in predictions between the Kelvin and Perry models. While much attention in UQ is placed on dealing with parametric issues, modeling choices tend to dominate behavior: This was a key lesson in ME 470. /Figure reproduced from [[https://ora.ox.ac.uk/objects/uuid:7854d3c6-676f-445a-918d-0a28ecb9b6a0][GSA Today]] article by England, Molnar, and Richter./
+#+attr_html: :width 400px
+[[./images/analysis_cf.png]]
+
 As an illustration, we started the first day with a [[./docs/me470_kelvin.pdf][hands-on]] exercise studying
 Lord Kelvin's (incorrect!) estimation of the age of the earth. Through this
 exercise, students identified potential sources of /model-form
