@@ -40,7 +40,7 @@ design process.
 
 Generally, people tend to seek absolute knowledge where it does not exist,
 closing themselves off from the possibility of learning. My research, teaching,
-and service are all connected to the same goal -- helping us manage uncertainty.
+and service are all connected to the same goal---helping us manage uncertainty.
 
 
 I have a unique blend of skills that I leverage in my work:
@@ -51,7 +51,7 @@ I have a unique blend of skills that I leverage in my work:
 
 I first trained as a mechanical engineer at [[http://www.olin.edu/][Olin College of Engineering]], whose
 curriculum emphasizes a [[http://www.olin.edu/academics/curriculum/][people-first]] approach to problem solving. There I
-developed the tools and mindset to identify and frame human problems -- a
+developed the tools and mindset to identify and frame human problems---a
 skillset I carried to my graduate studies. At Stanford I am pursuing a PhD in
 Aerospace Engineering under the supervision of [[http://web.stanford.edu/~jops][Gianluca Iaccarino]] and [[https://statistics.stanford.edu/people/art-b-owen][Art Owen]].
 This unique combination of investigative and analytic skills enabled me to
@@ -69,7 +69,7 @@ the [[https://datalab.stanford.edu/challenge-lab][Data Challenge Lab]], and I in
 research, teaching, and service. My graduate training in statistics has enabled
 me to pursue a rigorous treatment of uncertainty in my work on [[#subsec:margin][principled
 margin]], and my training in data science and visualization has influenced my work
-on [[#subsec:insight][algorithms for insight]].
+on [[#subsec:insight][data science for analysis and decisions]].
 
 ** Pedagogy
 :properties:
@@ -87,7 +87,7 @@ recognized by Stanford VPTL for my teaching abilities, and was hired as a
 :custom_id: sec:research
 :end:
 
-I am interested in how information -- in a broad sense -- flows through the
+I am interested in how information---in a broad sense---flows through the
 engineering design process. Modern advances in data collection, computation, and
 algorithms have opened the door to new ways to find engineering and scientific
 insights. These developments enable new approaches to old engineering problems,
@@ -100,9 +100,9 @@ my research:
 :end:
 
 Engineers design safe solutions for human needs. Designers achieve safety in
-part through /engineering margins/ -- essentially 'padding' in the quantitative
+part through /engineering margins/---essentially 'padding' in the quantitative
 values used for design. If you've ever put aside money for a rainy day, you're
-not just fiscally responsible -- you've built margin into your finances! My work
+not just fiscally responsible---you've built margin into your finances! My work
 on principled margin is focused on deriving data-driven engineering margins with
 provable properties.
 
@@ -142,23 +142,22 @@ data-informed to add a rigorous amount of design margin.
 
 *** Selected Publications
 - [[https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.6035]["Cutting the Double Loop: Theory and Algorithms for Reliability-Based Design
-  Optimization with Statistical Uncertainty"]] (2018, IJNME): In this work, I
+  Optimization with Statistical Uncertainty"]]: In this work, I
   introduce a framework for analyzing and formulating /rigorous design margins/
   for engineering design under uncertainty. I derive a number of constructs,
   including /margin in probability/ (MIP), which possesses provable safety
   properties that satisfy current [[https://www.law.cornell.edu/cfr/text/14/25.613][FAA Regulations]].
 
-- [[https://arc.aiaa.org/doi/pdf/10.2514/6.2019-0721]["Fast Precision Margin with the First-Order Reliability Method"]] (2019,
-  AIAA Journal): In this work, I further develop the techniques introduced in "Cutting
-  the Double Loop", and introduce algorithmic advances to enable fast
-  computation of precision margin. With my collaborator [[http://adl.stanford.edu/people/rickfenrich.html][Rick Fenrich]], we
-  demonstrate these techniques on the design of a complex, multi-physics
-  supersonic nozzle.
+- [[https://arc.aiaa.org/doi/pdf/10.2514/6.2019-0721]["Fast Precision Margin with the First-Order Reliability Method"]]: In this work,
+  I further develop the techniques introduced in "Cutting the Double Loop", and
+  introduce algorithmic advances to enable fast computation of precision margin.
+  With my collaborator [[http://adl.stanford.edu/people/rickfenrich.html][Rick Fenrich]], we demonstrate these techniques on the
+  design of a complex, multi-physics supersonic nozzle.
 
-- [[https://arc.aiaa.org/doi/pdf/10.2514/6.2019-3554]["Margin as Model: Some Answers to "How Many Tests Should I Perform?""]] (2019,
-  AIAA Aviation Forum): In this work, I apply principled margins to support
-  various engineering design questions, including the optimal allocation of a
-  test budget for materials characterization.
+- [[https://arc.aiaa.org/doi/pdf/10.2514/6.2019-3554]["Margin as Model: Some Answers to "How Many Tests Should I Perform?""]]: In this
+  work, I apply principled margins to support various engineering design
+  questions, including the optimal allocation of a test budget for materials
+  characterization.
 
 - "When are Design Allowables Conservative?" (To be presented at AIAA SciTech
   2020): In this work, I analyze the /design allowables framework/---the current
@@ -168,30 +167,43 @@ data-informed to add a rigorous amount of design margin.
   My work on Principled Margin---MIP and other constructs---provably solves
   these issues.
 
-** Algorithms for Insight
+** Data Science for Analysis and Decisions
 :properties:
 :custom_id: subsec:insight
 :end:
 
-The pace and output of engineering and science has changed. Where the analysts
-of yesterday made brilliant insights based on sparse observations, today's
-engineers and scientists are faced with a torrent of conflicting data. My work
-on Algorithms for Insight is focused on physics-constrained algorithms to
-extract relevant insights.
+Scientists and engineers need to carry out analyses and make decisions. Data
+science tools have the potential to support these activities, but interpreting
+data requires reasoning under uncertainty. I have worked on projects in a
+variety of different areas, but these efforts have a common thread: Managing
+uncertainty to support analysis and decisions.
 
 Selected Publications:
+- [[https://arxiv.org/abs/1911.03224]["Assessing the Frontier: Active Learning, Model Accuracy, and Multi-objective
+  Materials Discovery and Optimization"]]: With colleagues at [[https://citrine.io/][Citrine Informatics]],
+  I probed the relation between machine learning model accuracy and suitability
+  for guiding experimental choices in materials science. Simple intuition would
+  suggest that a more accurate model would give better suggestions; however,
+  this perspective misses some important details. I use and build upon concepts
+  from multi-objective optimization to construct accuracy measures more closely
+  related with experimental utility.
+
+#+caption: /The best model for accuracy is not necessarily the best for proposing new materials./ Mean non-dimensional error (left) is a measure of accuracy; the Acquisition strategy MPJE achieves better accuracy than the MPND approach. However, the less-accurate MPND approach leads to a greater number of proposed material candidates that are optimal "frontier" points (right).
+#+attr_html: :width 800px
+[[./images/zt_motivation.png]]
+
+- [[https://epubs.siam.org/doi/abs/10.1137/17M1155508]["Lurking Variable Detection via Dimensional Analysis"]]: In this
+  work, I introduce techniques to detect /unknown unknowns/, so-called lurking
+  variables. These techniques are based on classical ideas of /dimensional
+  analysis/---the idea that physical phenomena are ultimately independent of
+  human-defined measurement systems. I re-interpret this classic insight in a
+  modern context to enable lurking variable detection.
+
 - [[https://arc.aiaa.org/doi/pdf/10.2514/6.2017-1090]["Developing Design Insight Through Active Subspaces"]]: In this
   /award-winning/ paper (Jefferson Goblet, AIAA SciTech 2017), I demonstrate the
   use of modern model-reduction techniques to gain qualitative insights into
   engineering systems. For instance, I show that one can recover classical
   insights into aircraft design through an /automated, data-driven approach/.
-
-- [[https://epubs.siam.org/doi/abs/10.1137/17M1155508]["Lurking Variable Detection via Dimensional Analysis"]]: In this
-  work, I introduce techniques to detect /unknown unknowns/, so-called lurking
-  variables. These techniques are based on classical ideas of /dimensional
-  analysis/ -- the idea that physical phenomena are ultimately independent of
-  human-defined measurement systems. I re-interpret this classic insight in a
-  modern context to enable lurking variable detection.
 
 * Teaching
 :properties:
@@ -311,7 +323,7 @@ Today I serve as SeeME's Director of Curriculum: My job is to ensure SeeME
 executes on goal 2: Equip Stanford graduate students with teaching and speaking
 skills. I do this by leveraging my experience and contacts as a [[#subsec:vptl][VPTL teaching
 consultant]], organizing workshops to train our teachers and provide them guidance
-on course design -- a task many of them have never done before. I also organize
+on course design---a task many of them have never done before. I also organize
 our annual 'dress rehearsal', which gives our teachers a chance to practice
 their course, and gain targeted, timely feedback. I am also involved with with
 the miscellaneous tasks needed to make SeeME happen; I often take part in our
