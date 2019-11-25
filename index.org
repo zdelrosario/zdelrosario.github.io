@@ -42,7 +42,6 @@ Generally, people tend to seek absolute knowledge where it does not exist,
 closing themselves off from the possibility of learning. My research, teaching,
 and service are all connected to the same goal---helping us manage uncertainty.
 
-
 I have a unique blend of skills that I leverage in my work:
 ** Human-centered Engineering
 :properties:
@@ -52,11 +51,11 @@ I have a unique blend of skills that I leverage in my work:
 I first trained as a mechanical engineer at [[http://www.olin.edu/][Olin College of Engineering]], whose
 curriculum emphasizes a [[http://www.olin.edu/academics/curriculum/][people-first]] approach to problem solving. There I
 developed the tools and mindset to identify and frame human problems---a
-skillset I carried to my graduate studies. At Stanford I am pursuing a PhD in
+skillset I carried to my graduate studies. At Stanford I am completing a PhD in
 Aerospace Engineering under the supervision of [[http://web.stanford.edu/~jops][Gianluca Iaccarino]] and [[https://statistics.stanford.edu/people/art-b-owen][Art Owen]].
-This unique combination of investigative and analytic skills enabled me to
-effectively interview numerous engineers while interning at Northrop Grumman
-Corp., which directly led to my work on [[#subsec:margin][principled margin]].
+My mix of interviewing skills and statistical literacy enabled me to elicit
+problems from engineers while interning at Northrop Grumman Corp., which
+directly led to my work on [[#subsec:margin][principled margin]].
 
 ** Statistics and Data Science
 :properties:
