@@ -123,7 +123,7 @@ articulate the failure modes of these /reification errors/ in the context of
 aircraft structural design, and developed provably safe alternatives.
 
 #+caption: /Widely-used aircraft design strategies have fundamental flaws./ The use of /basis values/---conservative, reified material properties---can lead to a misleading safe diagnosis of structures. Note that the `Apprx.` Limit State value using a basis value indicates a safe structure for `2`, while the `True` value is unsafe. This and other issues in aircraft design arise from a reified view of material properties, and require a more rigorous approach to guarantee aircraft safety.
-#+attr_html: :width 400px
+#+attr_html: :width 600px
 [[./images/qe-monotonicity-both.png]]
 
 *** A Provably Safer Approach
