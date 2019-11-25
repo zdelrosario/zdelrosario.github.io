@@ -231,10 +231,21 @@ improvements, please let me know!
 :custom_id: subsec:me470
 :end:
 
-I will be teaching the Stanford course ME 470: Uncertainty Quantification in the
-Spring quarter of 2019. I'll have more to say about this after that point....
+In the Spring of 2019 I designed and taught the Stanford course ME 470:
+Uncertainty Quantification (UQ). I designed this class partly as an introduction
+to the methods, but primarily as an introduction to the /mindset/ of how to
+manage uncertainty.
 
-For now, [[./courses/ME_470/syllabus.html][here's the syllabus]].
+As an illustration, we started the first day with a [[./docs/me470_kelvin.pdf][hands-on]] exercise studying
+Lord Kelvin's (incorrect!) estimation of the age of the earth. Through this
+exercise, students identified potential sources of /model-form
+uncertainty/---errors in the posed equations used to describe a physical system.
+Students also practiced determining what information would be necessary to
+improve an analysis. Through this and similar exercises, students in ME 470
+learned not just the mathematics to carry out UQ, but also the /investigative
+mindset/ needed to manage uncertainty.
+
+For more information, [[./courses/ME_470/syllabus.html][here's the syllabus]].
 
 ** VPTL Teaching Consultant
 :properties:
