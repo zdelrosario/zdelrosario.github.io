@@ -300,7 +300,7 @@ sustained impact on our broader community.
 
 #+caption: SeeME at the Bay Area Science Festival, 2018.
 #+attr_html: :width 400px
-[[./images/basf_students.jpg]]
+[[./images/basf2018.jpg]]
 
 *** Personal Contribution
 My specific contributions to SeeME have been in spearheading its founding,
