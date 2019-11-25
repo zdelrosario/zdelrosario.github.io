@@ -265,6 +265,10 @@ their teaching skills. I leverage a combination of in-class experience and
 knowledge of the education literature in these consultations, and strive to help
 folks recognize and develop their unique teaching style.
 
+#+caption: /Facilitating a workshop at Stanford's TA Orientation./
+#+attr_html: :width 400px
+[[./images/tao2018.jpg]]
+
 * Service
 :properties:
 :custom_id: sec:service
