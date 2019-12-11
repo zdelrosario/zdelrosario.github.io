@@ -4,6 +4,13 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="org.css"/>
 #+OPTIONS: html-postamble:nil
 
+#+begin_export html
+<div align="center">
+  <a href="https://www.linkedin.com/in/zdr-su/" target="_blank"><img src="images/LI-black-32px.png" alt="LinkedIn"></a>
+  <a href="https://github.com/zdelrosario" target="_blank"><img src="images/GitHub-Mark-32px.png" alt="GitHub"></a>
+</div>
+#+end_export
+
 * Hello!
 :properties:
 :custom_id: sec:hello
